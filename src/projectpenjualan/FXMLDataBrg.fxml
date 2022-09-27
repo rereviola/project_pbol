@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="416.0" prefWidth="483.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="projectpenjualan.FXMLDataBrgController">
+   <children>
+      <TextField fx:id="searchbrg" layoutX="315.0" layoutY="42.0" onKeyReleased="#cariData" prefHeight="25.0" prefWidth="147.0" />
+      <Label layoutX="315.0" layoutY="21.0" text="Cari Data" />
+      <Button fx:id="btnakhir" layoutX="350.0" layoutY="301.0" mnemonicParsing="false" onAction="#akhirklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btnlast.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnsesudah" layoutX="264.0" layoutY="301.0" mnemonicParsing="false" onAction="#sesudahklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="33.0" fitWidth="34.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btnafter.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnsebelum" layoutX="176.0" layoutY="301.0" mnemonicParsing="false" onAction="#sebelumklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btnbefore.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnawal" layoutX="86.0" layoutY="301.0" mnemonicParsing="false" onAction="#awalklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btnfirst.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnkeluar" layoutX="350.0" layoutY="353.0" mnemonicParsing="false" onAction="#keluarklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button_cancel.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnhapus" layoutX="264.0" layoutY="353.0" mnemonicParsing="false" onAction="#hapusklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="38.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btndelete.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btnubah" layoutX="176.0" layoutY="353.0" mnemonicParsing="false" onAction="#ubahklik" prefHeight="45.0" prefWidth="51.0">
+         <graphic>
+            <ImageView fitHeight="28.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../btnedit.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button fx:id="btntambah" layoutX="86.0" layoutY="353.0" mnemonicParsing="false" onAction="#tambahklik" prefHeight="45.0" prefWidth="38.0">
+         <graphic>
+            <ImageView fitHeight="35.0" fitWidth="46.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../button_add.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <TableView fx:id="tbvbrg" layoutX="24.0" layoutY="74.0" prefHeight="211.0" prefWidth="438.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Label layoutX="24.0" layoutY="24.0" text="Data Barang">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="299.0" prefWidth="431.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectpenjualan.FXMLInputBrgController">
+   <children>
+      <Label layoutX="46.0" layoutY="24.0" text="Tambah/Edit Data Barang">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnkeluar" layoutX="225.0" layoutY="229.0" mnemonicParsing="false" onAction="#keluarklik" text="Keluar" />
+      <Button fx:id="btnbatal" layoutX="155.0" layoutY="229.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="31.0" prefWidth="62.0" text="Batal" />
+      <Button fx:id="btnsimpan" layoutX="75.0" layoutY="229.0" mnemonicParsing="false" onAction="#simpanklik" text="Simpan" />
+      <TextField fx:id="txttarif" layoutX="155.0" layoutY="143.0" />
+      <TextField fx:id="txtnamabrg" layoutX="155.0" layoutY="107.0" />
+      <TextField fx:id="txtkode" layoutX="155.0" layoutY="74.0" />
+      <Label layoutX="56.0" layoutY="148.0" text="Tarif" />
+      <Label layoutX="56.0" layoutY="112.0" text="Nama Barang" />
+      <Label layoutX="56.0" layoutY="79.0" text="Kode Barang" />
+   </children>
+</AnchorPane>

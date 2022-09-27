@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="321.0" prefWidth="334.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectpenjualan.FXMLInputCustController">
+   <children>
+      <Label layoutX="46.0" layoutY="69.0" text="id" />
+      <Label layoutX="46.0" layoutY="102.0" text="nama" />
+      <Label layoutX="46.0" layoutY="138.0" text="alamat" />
+      <Label layoutX="46.0" layoutY="174.0" text="total" />
+      <TextField fx:id="txtid" layoutX="113.0" layoutY="65.0" />
+      <TextField fx:id="txtnama" layoutX="113.0" layoutY="98.0" />
+      <TextField fx:id="txtalamat" layoutX="113.0" layoutY="134.0" />
+      <TextField fx:id="txttotal" layoutX="113.0" layoutY="170.0" />
+      <Button fx:id="btnsimpan" layoutX="65.0" layoutY="219.0" mnemonicParsing="false" onAction="#simpanklik" text="Simpan" />
+      <Button fx:id="btnbatal" layoutX="145.0" layoutY="219.0" mnemonicParsing="false" onAction="#batalklik" prefHeight="31.0" prefWidth="62.0" text="Batal" />
+      <Button fx:id="btnkeluar" layoutX="215.0" layoutY="219.0" mnemonicParsing="false" onAction="#keluarklik" text="Keluar" />
+      <Label layoutX="36.0" layoutY="14.0" text="Tambah/Edit Data Customer">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

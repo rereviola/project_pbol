@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="367.0" prefWidth="529.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="projectpenjualan.FXMLDocumentController">
+    <children>
+      <MenuBar prefHeight="25.0" prefWidth="525.0">
+        <menus>
+            <Menu mnemonicParsing="false" text="Input">
+              <items>
+                <MenuItem fx:id="inputcust" mnemonicParsing="false" onAction="#inputcustklik" text="Customer" />
+                  <MenuItem fx:id="inputbrg" mnemonicParsing="false" onAction="#inputbrgklik" text="Barang" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Data">
+            <items>
+              <MenuItem fx:id="displaycust" mnemonicParsing="false" onAction="#displaycustklik" text="Customer" />
+                  <MenuItem fx:id="displaybrg" mnemonicParsing="false" onAction="#displaybrgklik" text="Barang" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Transaction">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Sell" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <ImageView fitHeight="353.0" fitWidth="818.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../5291450.jpg" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>
